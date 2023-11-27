@@ -1,0 +1,116 @@
+#container_play_1{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 2fr 1fr;
+    background-color: #B4B4B6;
+    width: 500px;
+    height: 350px;
+    border-radius: 5px;
+}
+
+#center_side_play{
+    border-left: 3px solid #49494B;
+    border-right: 3px solid #49494B;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+#left_side_play, #right_side_play, #center_side_play{
+    display: flex;
+    flex-direction: column-reverse;
+    align-content: end;
+}
+#power_button, #reset_button, #open_button{
+    width: 100%;
+    height: 110px;
+}
+#power_button, #open_button{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+}
+
+#power_button>div:nth-child(1), #open_button>div:nth-child(1){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 90px ;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid black;
+    border-radius: 50%;
+    color: #0FC9B7;
+    box-shadow: 0 0 0px 2px #8B8B8D;
+    background-color: #A3A3A5;
+    font-size: 12px;
+}
+#power_button>div:nth-child(2){
+    display: flex;
+    flex-direction: column-reverse;
+    width: 5px;
+    height: 20px;
+    background-color: #8B8B8D;
+    color: aqua;
+}
+#light_power{
+    height: 50%;
+    width: 100%;
+    background: linear-gradient(to top, #D4FD00, #5B9C3C)
+}
+
+#reset_button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#reset_button>div:nth-child(1){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-50%);
+    border: 1px solid black;
+    box-shadow: 0 0 0px 2px #8B8B8D;
+    background-color: #A3A3A5;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 7px;
+}
+
+#tapa_disco{
+    position: absolute;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    top: 1%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 320px;
+    height: 320px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: #B9B9BB;
+    box-shadow: 0 0 0px 4px #8B8B8D;
+}
+#tapa_disco div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#tapa_disco p{
+    font-size: 20px;
+    color: #49494B;
+    font-weight: bold;
+}
+#play_logo p{
+    font-size: 12px;
+    color: rgb(52, 52, 52);
+    margin: 0;
+}
